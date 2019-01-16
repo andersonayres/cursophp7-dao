@@ -19,9 +19,29 @@ require_once("config.php");
 
 //Buscando usuario autenticados.
 
-$usuario = new Usuario();
-$usuario->login("jose", "123456");
+//$usuario = new Usuario();
+//$usuario->login("jose", "123456");
 
-echo $usuario;
+//echo $usuario;
+
+//insert criando outro usuario
+//$aluno = new Usuario("aluno", "@alunos");
+
+//$aluno->insert();
+
+//echo $aluno;
+
+$usuario = new Usuario();
+$usuario->loadbyId(9);
+
+$usuario->update("professor 2", "123qwe2");
 
  ?> 
+
+
+
+
+
+
+
+
